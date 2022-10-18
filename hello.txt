@@ -1,2 +1,8 @@
 hello world 
 hello git
+66666
+按i键进入Insert编辑模式
+vim 文件名
+
+esc 退出模式 然后按shift+:切换到底部命令输入模式  w 写入 r 退出 wr 写入并退出
+：
