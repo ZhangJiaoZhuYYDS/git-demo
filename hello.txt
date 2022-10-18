@@ -2,7 +2,8 @@ hello world
 hello git
 66666
 按i键进入Insert编辑模式
-vim 文件名
+vim 文件名 使用vim命令进入文件
+cat 文件名  查看文件
 
-esc 退出模式 然后按shift+:切换到底部命令输入模式  w 写入 r 退出 wr 写入并退出
+esc 退出模式 然后按shift+:切换到底部命令输入模式  w 写入 q 退出 wq 写入并退出
 ：
