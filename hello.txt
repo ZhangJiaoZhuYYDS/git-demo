@@ -1,9 +1,25 @@
 hello world 
 hello git
 66666
-按i键进入Insert编辑模式
-vim 文件名 使用vim命令进入文件
-cat 文件名  查看文件
+vim 命令
+  按i键进入Insert编辑模式
+  vim 文件名 使用vim命令进入文件
+  cat 文件名  查看文件
+  esc 退出模式 然后按shift+:切换到底部命令输入模式  w 写入 q 退出 wq 写入并退出
 
-esc 退出模式 然后按shift+:切换到底部命令输入模式  w 写入 q 退出 wq 写入并退出
-：
+git 命令
+      初始化本地库：1 切换到所要添加的目录下 2 初始化 git init
+      查看本地库状态：  git status
+      选中即复制 鼠标中键粘贴	
+      
+      添加暂存区 git add 文件名
+      提交本地库 git commit -m "自定义版本描述"
+      查看git日志  git reflog/log  
+
+      版本穿梭(指针移动)  git reset --hard 版本号
+分支操作
+     查看所有分支 git branch -v     *master 087ala7 my third commit(*代表当前所在的分区)
+     创建分支  git branch 分支名
+     切换分支  git checkout 分支名
+		
+      
