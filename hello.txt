@@ -33,6 +33,7 @@ git 命令
 		1 fatal: unable to access 'https://github.com/ZhangJiaoZhuYYDS/git-demo.git/': SSL certificate problem: unable to get local issuer certificate
 		2  解决方法 git config --global http.sslVerify false
 		3 原因  这个问题是由于Git默认开启了SSL验证，关闭即可。没有配置信任的服务器HTTPS验证。默认，cURL被设为不信任任何CAs，就是说，它不信任任何服务器验证
+	git pull 别名（远程地址）分支名   拉取远程库到本地库	
 
 		
       
