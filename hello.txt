@@ -13,7 +13,7 @@ git 命令
       选中即复制 鼠标中键粘贴	
       
       添加暂存区 git add 文件名
-      提交本地库 git commit -m "自定义版本描述"
+      提交本地库 git commit -m "自定义版本描述" 文件名
       查看git日志  git reflog/log  
 
       版本穿梭(指针移动)  git reset --hard 版本号
@@ -21,5 +21,18 @@ git 命令
      查看所有分支 git branch -v     *master 087ala7 my third commit(*代表当前所在的分区)
      创建分支  git branch 分支名
      切换分支  git checkout 分支名
+     合并分支
+         （正常合并）git merge 分支名  
+         （ 冲突合并）1)编辑有冲突的文件，删除特殊符号，决定要使用的内容 
+	              2）提交暂存区 3）提交本地库 git commit -m "描述"    注意：不带文件名
+远程仓库操作
+	git remote -v 查看当前所有远程地址别名
+	git remote add 别名 远程地址      给远程地址起别名
+	git push 别名（远程地址）分支名     推送本地库到远程库 
+	       报错  $ git push git-demo master
+		1 fatal: unable to access 'https://github.com/ZhangJiaoZhuYYDS/git-demo.git/': SSL certificate problem: unable to get local issuer certificate
+		2  解决方法 git config --global http.sslVerify false
+		3 原因  这个问题是由于Git默认开启了SSL验证，关闭即可。没有配置信任的服务器HTTPS验证。默认，cURL被设为不信任任何CAs，就是说，它不信任任何服务器验证
+
 		
       
